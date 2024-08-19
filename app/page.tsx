@@ -5,25 +5,27 @@ export default function Page() {
   return (
     <section>
       {/* Images Section */}
-      <div className="mb-4 flex space-x-4 animate-fade-in">
+      <div className="mb-4 flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 animate-fade-in">
         {/* First Image */}
-        <div className="rounded-lg shadow-lg">
+        <div className="rounded-lg shadow-lg flex-1">
           <Image
             src="https://res.cloudinary.com/dwxxuolek/image/upload/v1724056044/Blue_and_White_Minimal_Modern_Simple_Typography_Art_Workshop_Instagram_Story_btei64.png"
             alt="Art Workshop"
-            width={200} // Adjust width as needed
-            height={100} // Adjust height as needed
+            layout="responsive"
+            width={500}
+            height={300}
             className="rounded-lg"
           />
         </div>
 
         {/* Second Image */}
-        <div className="rounded-lg shadow-lg">
+        <div className="rounded-lg shadow-lg flex-1">
           <Image
             src="https://res.cloudinary.com/dwxxuolek/image/upload/v1724057924/Yellow_and_Black_Simple_Save_Date_Instagram_Story_rfsdzq.png"
             alt="Save the Date"
-            width={200} // Adjust width as needed
-            height={100} // Adjust height as needed
+            layout="responsive"
+            width={500}
+            height={300}
             className="rounded-lg"
           />
         </div>
@@ -31,11 +33,21 @@ export default function Page() {
 
       {/* Paragraph */}
       <p className="mb-4 text-xl">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
+        {`As a `}
+        <span
+          className="text-yellow-500 font-semibold"
+          style={{ fontFamily: '"Irish Grover", system-ui' }}
+        >
+          Technical Product Manager
+        </span>
+        {` and `}
+        <span
+          className="text-yellow-500 font-semibold"
+          style={{ fontFamily: '"Irish Grover", system-ui' }}
+        >
+          Software Developer
+        </span>
+        {`, I’ve successfully led and executed projects at companies like Subko Coffee, driving enhancements in operational workflows and optimizing web applications. My achievements include a top 4 finish at Solana Hackday Delhi for a decentralized web app and spearheading the development of an award-winning Smart Helmet project. Passionate about technology, I actively contribute to the tech community through workshops and events as a member of SALAAH, promoting digital literacy.`}
       </p>
 
       {/* Blog Posts */}
