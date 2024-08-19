@@ -24,7 +24,7 @@ export function Navbar() {
           {/* Logo Section */}
           <div className="flex order-2 md:order-1 md:flex md:flex-row items-center">
             <Link href="/">
-              <Logo className="transition-all hover:opacity-80 md:mr-8 md:ml-0 ml-2" />
+              <Logo />
             </Link>
           </div>
 
